@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>카페 데이터 추가</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+<div class="container">
+  <h2>카페 데이터 추가</h2>
+  <form id="cafeForm">
+    <div class="form-group">
+      <label for="cafeName">카페명:</label>
+      <input type="text" id="cafeName" placeholder="ex. 투썸플레이스" required>
+    </div>
+
+    <div class="form-group">
+      <label for="drinkName">음료 이름:</label>
+      <input type="text" id="drinkName" placeholder="ex. 딸기 라떼" required>
+    </div>
+
+    <div class="form-group">
+      <label>온도:</label>
+      <div class="radio-group">
+        <input type="radio" id="hot" name="temperature" value="true">
+        <label for="hot">HOT</label>
+        <input type="radio" id="ice" name="temperature" value="false" checked>
+        <label for="ice">ICE</label>
+      </div>
+    </div>
+
+    <div class="form-group">
+      <label for="toppings">토핑 종류(쉼표로 구분):</label>
+      <input type="text" id="toppings" placeholder="ex. 헤이즐넛 시럽, 카라멜 시럽, 휘핑크림, 초콜릿" required>
+    </div>
+
+    <div class="form-group">
+      <label for="kcal">칼로리(숫자만 입력):</label>
+      <input type="number" id="kcal" placeholder="ex. 165" required>
+    </div>
+
+    <div class="form-group">
+      <label for="sugar">당류(숫자만 입력):</label>
+      <input type="number" id="sugar" placeholder="ex. 30" required>
+    </div>
+
+    <div class="form-group">
+      <label for="size">사이즈:</label>
+      <input type="text" id="size" placeholder="ex. tall" required>
+    </div>
+
+    <div class="form-group">
+      <label for="manager">담당자:</label>
+      <input type="text" id="manager" placeholder="ex. 홍길동" required>
+    </div>
+
+    <button type="button" onclick="submitForm()">완료</button>
+  </form>
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>
+
